@@ -3,7 +3,7 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-let hearts = document.querySelectorAll("span .like");
+let hearts = document.querySelectorAll("span.like");
 const likeHeart = (e) => {
   let heart = e.target;
 
