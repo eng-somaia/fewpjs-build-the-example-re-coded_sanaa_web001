@@ -3,14 +3,12 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-let hearts = document.querySelectorAll(".like");
-console.log(hearts);
+let hearts = document.querySelectorAll("span .like");
 const likeHeart = (e) => {
   let heart = e.target;
 
   mimicServerCall("bogusUrl")
  .then(serverMessage => {
-   console.log("hi")
    heart.innerHTML === EMPTY_HEART ? heart.innerHTML = FULL_HEART : heart.innerHTML = EMPTY_HEART
    heart.innerHTML === FULL_HEART ?  heart.style.color='red' : heart.style.color=''
  })
