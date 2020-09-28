@@ -4,7 +4,7 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 let hearts = document.getElementsByClassName('like');
-
+console.log(hearts);
 const likeHeart = (e) => {
   let heart = e.target;
 
