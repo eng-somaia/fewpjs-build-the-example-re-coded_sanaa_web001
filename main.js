@@ -10,7 +10,7 @@ const likeHeart = (e) => {
 
   mimicServerCall("bogusUrl")
  .then(serverMessage => {
-   heart.innerHTML === EMPTY_HEART ? (heart.innerHTML === FULL_HEART; heart.style.color ='red'): (heart.innerHTML === EMPTY_HEART; heart.style.color = '');
+   heart.innerHTML === EMPTY_HEART ? (heart.innerHTML === FULL_HEART heart.style.color ='red'): (heart.innerHTML === EMPTY_HEART; heart.style.color = '');
  })
      .catch( error => {
        document.getElementById("modal").className = "";
