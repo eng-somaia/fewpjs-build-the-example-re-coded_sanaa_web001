@@ -12,7 +12,7 @@ const likeHeart = (e) => {
  .then(serverMessage => {
    console.log("hi")
    heart.innerHTML === EMPTY_HEART ? heart.innerHTML = FULL_HEART : heart.innerHTML = EMPTY_HEART
-   heart.innerHTML === EMPTY_HEART ?  heart.style.color='red' : heart.style.color=''
+   heart.innerHTML === FULL_HEART ?  heart.style.color='red' : heart.style.color=''
  })
  .catch( error => {
     document.getElementById("modal").className = "";
